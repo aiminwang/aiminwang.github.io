@@ -44,46 +44,6 @@
   </entry>
   
   <entry>
-    <title>Test again</title>
-    <link href="http://yoursite.com/2018/03/30/Test-again/"/>
-    <id>http://yoursite.com/2018/03/30/Test-again/</id>
-    <published>2018-03-30T07:50:24.000Z</published>
-    <updated>2018-03-30T07:53:08.185Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
-      <category term="日记" scheme="http://yoursite.com/categories/%E6%97%A5%E8%AE%B0/"/>
-    
-    
-      <category term="test" scheme="http://yoursite.com/tags/test/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Test-article</title>
-    <link href="http://yoursite.com/2018/03/30/Test-article/"/>
-    <id>http://yoursite.com/2018/03/30/Test-article/</id>
-    <published>2018-03-30T07:35:05.000Z</published>
-    <updated>2018-03-30T07:38:16.787Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
-      <category term="others" scheme="http://yoursite.com/categories/others/"/>
-    
-      <category term="文章" scheme="http://yoursite.com/categories/others/%E6%96%87%E7%AB%A0/"/>
-    
-    
-      <category term="test" scheme="http://yoursite.com/tags/test/"/>
-    
-      <category term="others" scheme="http://yoursite.com/tags/others/"/>
-    
-  </entry>
-  
-  <entry>
     <title>Hello World</title>
     <link href="http://yoursite.com/2018/03/30/hello-world/"/>
     <id>http://yoursite.com/2018/03/30/hello-world/</id>
