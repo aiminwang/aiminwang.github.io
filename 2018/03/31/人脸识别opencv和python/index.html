@@ -8,23 +8,23 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>人脸识别opencv和python | Aimin-Wang</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="首先、来两张帅帅的识别效果图：   目标总览： 一、 Haar特征分类器介绍二、detectMultiScale函数三、python OpenCV 解决人脸识别报错四、识别框的形状**五、代码实现">
+  <meta name="description" content="首先、来两张帅帅的识别效果图：  目标总览： 一、 Haar特征分类器介绍二、detectMultiScale函数三、python OpenCV 解决人脸识别报错四、识别框的形状**五、代码实现">
 <meta name="keywords" content="人脸识别,Opencv">
 <meta property="og:type" content="article">
 <meta property="og:title" content="人脸识别opencv和python">
 <meta property="og:url" content="http://yoursite.com/2018/03/31/人脸识别opencv和python/index.html">
 <meta property="og:site_name" content="Aimin-Wang">
-<meta property="og:description" content="首先、来两张帅帅的识别效果图：   目标总览： 一、 Haar特征分类器介绍二、detectMultiScale函数三、python OpenCV 解决人脸识别报错四、识别框的形状**五、代码实现">
+<meta property="og:description" content="首先、来两张帅帅的识别效果图：  目标总览： 一、 Haar特征分类器介绍二、detectMultiScale函数三、python OpenCV 解决人脸识别报错四、识别框的形状**五、代码实现">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="http://img.blog.csdn.net/20170918221147630?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzQ3Nzc2MDA=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
+<meta property="og:image" content="http://img.blog.csdn.net/20180331201543173?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzQ3Nzc2MDA=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
 <meta property="og:image" content="http://img.blog.csdn.net/20170918205338803?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzQ3Nzc2MDA=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
 <meta property="og:image" content="http://img.blog.csdn.net/20170918210302607?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzQ3Nzc2MDA=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
 <meta property="og:image" content="http://img.blog.csdn.net/20170918214156774?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzQ3Nzc2MDA=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
-<meta property="og:updated_time" content="2018-03-31T09:59:20.486Z">
+<meta property="og:updated_time" content="2018-03-31T12:16:03.340Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="人脸识别opencv和python">
-<meta name="twitter:description" content="首先、来两张帅帅的识别效果图：   目标总览： 一、 Haar特征分类器介绍二、detectMultiScale函数三、python OpenCV 解决人脸识别报错四、识别框的形状**五、代码实现">
-<meta name="twitter:image" content="http://img.blog.csdn.net/20170918221147630?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzQ3Nzc2MDA=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
+<meta name="twitter:description" content="首先、来两张帅帅的识别效果图：  目标总览： 一、 Haar特征分类器介绍二、detectMultiScale函数三、python OpenCV 解决人脸识别报错四、识别框的形状**五、代码实现">
+<meta name="twitter:image" content="http://img.blog.csdn.net/20180331201543173?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzQ3Nzc2MDA=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
   
     <link rel="alternative" href="/atom.xml" title="Aimin-Wang" type="application/atom+xml">
   
@@ -194,8 +194,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>首先、来两张帅帅的识别效果图：</p>
-<p><img src="http://img.blog.csdn.net/20170918221147630?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzQ3Nzc2MDA=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></p>
+        <p>首先、来两张帅帅的识别效果图：<br><img src="http://img.blog.csdn.net/20180331201543173?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzQ3Nzc2MDA=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></p>
 <hr>
 <h2 id="目标总览："><a href="#目标总览：" class="headerlink" title="目标总览："></a><strong>目标总览：</strong></h2><p> 一、 Haar特征分类器介绍<br>二、detectMultiScale函数<br>三、python OpenCV 解决人脸识别报错<br>四、识别框的形状**<br>五、代码实现</p>
 <a id="more"></a>
@@ -488,11 +487,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">OpenGL</a>
+                <a href="javascript:void(0)" class="js-tag color5">Hexo</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">3D</a>
+                <a href="javascript:void(0)" class="js-tag color2">Github</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -504,11 +503,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">Hexo</a>
+                <a href="javascript:void(0)" class="js-tag color2">OpenGL</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Github</a>
+                <a href="javascript:void(0)" class="js-tag color3">3D</a>
               </li>
              
               <li class="article-tag-list-item">
