@@ -6,16 +6,25 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>categories | Aimin-Wang</title>
+  <title>人脸识别opencv和python | Aimin-Wang</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="categories">
-<meta property="og:url" content="http://yoursite.com/categories/index.html">
+  <meta name="description" content="首先、来两张帅帅的识别效果图：   目标总览： 一、 Haar特征分类器介绍二、detectMultiScale函数三、python OpenCV 解决人脸识别报错四、识别框的形状**五、代码实现">
+<meta name="keywords" content="人脸识别,Opencv">
+<meta property="og:type" content="article">
+<meta property="og:title" content="人脸识别opencv和python">
+<meta property="og:url" content="http://yoursite.com/2018/03/31/人脸识别opencv和python/index.html">
 <meta property="og:site_name" content="Aimin-Wang">
+<meta property="og:description" content="首先、来两张帅帅的识别效果图：   目标总览： 一、 Haar特征分类器介绍二、detectMultiScale函数三、python OpenCV 解决人脸识别报错四、识别框的形状**五、代码实现">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-03-30T12:14:16.644Z">
+<meta property="og:image" content="http://img.blog.csdn.net/20170918221147630?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzQ3Nzc2MDA=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
+<meta property="og:image" content="http://img.blog.csdn.net/20170918205338803?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzQ3Nzc2MDA=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
+<meta property="og:image" content="http://img.blog.csdn.net/20170918210302607?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzQ3Nzc2MDA=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
+<meta property="og:image" content="http://img.blog.csdn.net/20170918214156774?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzQ3Nzc2MDA=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
+<meta property="og:updated_time" content="2018-03-31T09:59:20.486Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="categories">
+<meta name="twitter:title" content="人脸识别opencv和python">
+<meta name="twitter:description" content="首先、来两张帅帅的识别效果图：   目标总览： 一、 Haar特征分类器介绍二、detectMultiScale函数三、python OpenCV 解决人脸识别报错四、识别框的形状**五、代码实现">
+<meta name="twitter:image" content="http://img.blog.csdn.net/20170918221147630?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzQ3Nzc2MDA=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
   
     <link rel="alternative" href="/atom.xml" title="Aimin-Wang" type="application/atom+xml">
   
@@ -165,27 +174,56 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="categories-" class="article article-type-categories " itemscope itemprop="blogPost">
+            <article id="post-人脸识别opencv和python" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      categories
+      人脸识别opencv和python
     </h1>
   
 
         
-        <a href="/categories/index.html" class="archive-article-date">
-  	<time datetime="2018-03-30T10:23:31.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-03-30</time>
+        <a href="/2018/03/31/人脸识别opencv和python/" class="archive-article-date">
+  	<time datetime="2018-03-31T09:51:03.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-03-31</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <p>首先、来两张帅帅的识别效果图：</p>
+<p><img src="http://img.blog.csdn.net/20170918221147630?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzQ3Nzc2MDA=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></p>
+<hr>
+<h2 id="目标总览："><a href="#目标总览：" class="headerlink" title="目标总览："></a><strong>目标总览：</strong></h2><p> 一、 Haar特征分类器介绍<br>二、detectMultiScale函数<br>三、python OpenCV 解决人脸识别报错<br>四、识别框的形状**<br>五、代码实现</p>
+<a id="more"></a>
+<hr>
+<p><img src="http://img.blog.csdn.net/20170918205338803?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzQ3Nzc2MDA=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></p>
+<hr>
+<h2 id="一、Haar特征分类器介绍"><a href="#一、Haar特征分类器介绍" class="headerlink" title="一、Haar特征分类器介绍"></a><strong>一、Haar特征分类器介绍</strong></h2><p>Haar特征分类器就是一个XML文件，该文件中会描述人体各个部位的Haar特征值。包括人脸、眼睛、嘴唇等等。<br>Haar特征分类器存放目录：OpenCV安装目录中的\data\ haarcascades目录下，opencv2.4.8版本下的Haar特征分类器如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">haarcascade_eye.xml</span><br><span class="line">haarcascade_eye_tree_eyeglasses.xml</span><br><span class="line">haarcascade_frontalface_alt.xml</span><br><span class="line">haarcascade_frontalface_alt_tree.xml</span><br><span class="line">haarcascade_frontalface_alt2.xml</span><br><span class="line">haarcascade_frontalface_default.xml</span><br><span class="line">haarcascade_fullbody.xml</span><br><span class="line">haarcascade_lefteye_2splits.xml</span><br><span class="line">haarcascade_lowerbody.xml</span><br><span class="line">haarcascade_mcs_eyepair_big.xml</span><br><span class="line">haarcascade_mcs_eyepair_small.xml</span><br><span class="line">haarcascade_mcs_leftear.xml</span><br><span class="line">haarcascade_mcs_lefteye.xml</span><br><span class="line">haarcascade_mcs_mouth.xml</span><br><span class="line">haarcascade_mcs_nose.xml</span><br><span class="line">haarcascade_mcs_rightear.xml</span><br><span class="line">haarcascade_mcs_righteye.xml</span><br><span class="line">haarcascade_mcs_upperbody.xml</span><br><span class="line">haarcascade_profileface.xml</span><br><span class="line">haarcascade_righteye_2splits.xml</span><br><span class="line">haarcascade_smile.xml</span><br><span class="line">haarcascade_upperbody.xml</span><br></pre></td></tr></table></figure>
+<p>根据命名就可以很快知道各个分类器的用途。</p>
+<p>其中：haarcascade_frontalface_alt.xml与haarcascade_frontalface_alt2.xml都是人脸识别的Haar特征分类器了。</p>
+<h2 id="二、detectMultiScale函数"><a href="#二、detectMultiScale函数" class="headerlink" title="二、detectMultiScale函数"></a><strong>二、detectMultiScale函数</strong></h2><p>cvHaarDetectObjects是opencv1中的函数，opencv2中人脸检测使用的是 detectMultiScale函数。它可以检测出图片中所有的人脸。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rects = cascade.detectMultiScale(img,1.3, 6,cv2.CASCADE_SCALE_IMAGE,(20,20))</span><br></pre></td></tr></table></figure>
+<p>img–待检测图片，一般为灰度图像加快检测速度；<br>rects–被检测物体的矩形框向量组；<br>其他参数–调节识别程度……</p>
+<h2 id="三、python-OpenCV-解决人脸识别报错"><a href="#三、python-OpenCV-解决人脸识别报错" class="headerlink" title="三、python OpenCV 解决人脸识别报错"></a><strong>三、python OpenCV 解决人脸识别报错</strong></h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">错误提示：</span><br><span class="line">cv2.error: C:\builds\master_PackSlaveAddon-win64-vc12-static\opencv\modules\objdetect\src\cascadedetect.cpp:1639: error: (-215) !empty() in function cv::CascadeClassifier::detectMultiScale</span><br></pre></td></tr></table></figure>
+<p>到底是什么问题呢？</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">face_cascade=cv2.CascadeClassifier(&apos;haarcascade_frontalface_default.xml&apos;)</span><br></pre></td></tr></table></figure>
+<p>我们在这段代码后面，加上下面这句话，就是你自己找下分类器文档的位置，把path写清楚。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">face_cascade.load(&apos;D:/opencv/sources/data/haarcascades/haarcascade_frontalface_default.xml&apos;)</span><br></pre></td></tr></table></figure>
+<h2 id="四、识别框的形状"><a href="#四、识别框的形状" class="headerlink" title="四、识别框的形状"></a><strong>四、识别框的形状</strong></h2><p>选择输出识别框的形状，对rects（被检测物体的矩形框向量组）中的数据进行处理</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cv2.circle(img, (x, y), r, (co1,co2,co3), 2)              #圆形</span><br><span class="line">cv2.rectangle(img, (x1, y1), (x2, y2), (co1,co2,co3), 2)  #矩形</span><br></pre></td></tr></table></figure>
+<p>Then it works happily ！     φ(゜▽゜*)♪</p>
+<p>再来张识别对比图：</p>
+<p><img src="http://img.blog.csdn.net/20170918210302607?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzQ3Nzc2MDA=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></p>
+<h2 id="五、代码"><a href="#五、代码" class="headerlink" title="五、代码"></a><strong>五、代码</strong></h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br></pre></td><td class="code"><pre><span class="line">import cv2</span><br><span class="line">import numpy as np</span><br><span class="line"></span><br><span class="line">def detect(img, cascade):</span><br><span class="line">    rects = cascade.detectMultiScale(img,1.3, 6,cv2.CASCADE_SCALE_IMAGE,(20,20))</span><br><span class="line">    if  len(rects) == 0:</span><br><span class="line">        return []</span><br><span class="line">    rects[:, 2:] += rects[:, :2]</span><br><span class="line">    print rects</span><br><span class="line">    return rects</span><br><span class="line"></span><br><span class="line">def draw_rects(img, rects):</span><br><span class="line">    r =0</span><br><span class="line">    x = 0</span><br><span class="line">    y = 0</span><br><span class="line">    num = 0</span><br><span class="line">    for x1, y1, x2, y2 in rects:</span><br><span class="line">        num = num + 1</span><br><span class="line">        co1 = 0</span><br><span class="line">        co2 = 0</span><br><span class="line">        co3 = 0</span><br><span class="line">        if(num%3 == 0): co1 = 255</span><br><span class="line">        if(num%3 == 1): co2 = 255</span><br><span class="line">        if(num%3 == 2): co3 = 255</span><br><span class="line">        x = np.int((x1 + x2) * 0.5)</span><br><span class="line">        y = np.int((y1 + y2) * 0.5)</span><br><span class="line">        r = np.int(( abs(x1 - x2) + abs(y1-y2) ) * 0.25)</span><br><span class="line">        cv2.circle(img, (x, y), r, (co1,co2,co3), 2)</span><br><span class="line">      #  cv2.rectangle(img, (x1, y1), (x2, y2), color, 2)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">img = cv2.imread(&quot;2.jpg&quot;)</span><br><span class="line">cv2.namedWindow(&quot;frame&quot;, cv2.WINDOW_NORMAL)</span><br><span class="line">cv2.imshow(&quot;frame&quot;, img)</span><br><span class="line"></span><br><span class="line">gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)</span><br><span class="line">#cv2.namedWindow(&quot;gray&quot;, cv2.WINDOW_NORMAL)</span><br><span class="line">#cv2.imshow(&quot;gray&quot;, gray)</span><br><span class="line"></span><br><span class="line">face_cascade=cv2.CascadeClassifier(&apos;haarcascade_frontalface_default.xml&apos;)</span><br><span class="line">face_cascade.load(&apos;D:/opencv/sources/data/haarcascades/haarcascade_frontalface_default.xml&apos;)</span><br><span class="line"></span><br><span class="line">rects = detect(gray, face_cascade)</span><br><span class="line"></span><br><span class="line">vis = img.copy()</span><br><span class="line"></span><br><span class="line">draw_rects(vis,rects)</span><br><span class="line"></span><br><span class="line">cv2.namedWindow(&quot;facedetect&quot;, cv2.WINDOW_NORMAL)</span><br><span class="line">cv2.imshow(&quot;facedetect&quot;, vis)</span><br><span class="line">cv2.imwrite(&quot;facedetect.jpg&quot;, vis)</span><br><span class="line"></span><br><span class="line">cv2.waitKey(0)</span><br><span class="line">cv2.destroyAllWindows()</span><br></pre></td></tr></table></figure>
+<p><del>~</del><del>~</del><del>~</del><del>~</del><del>~</del><del>~</del><del>~</del><del>~</del><del>~</del><del>~</del><del>~</del><del>~</del><del>~</del><del>~</del><del>~</del><del>~</del>~~~~</p>
+<p><strong>当然，这个识别效果也不是特别好，再来张识别对比图</strong>（头像太小识别效果不是特别准确）：<br><img src="http://img.blog.csdn.net/20170918214156774?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzQ3Nzc2MDA=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"><br>**</p>
+<h2 id="END"><a href="#END" class="headerlink" title="END"></a>END</h2><p>**</p>
+
       
 
       
@@ -219,7 +257,33 @@
     <div class="article-info article-info-index">
       
       
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">人脸识别</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Opencv</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
       
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/Python//" class="article-tag-list-link color2">Python</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
 
       
 
@@ -269,7 +333,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/categories/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2018/03/31/人脸识别opencv和python/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -281,6 +345,16 @@
 </article>
 
   
+<nav id="article-nav">
+  
+  
+    <a href="/2018/03/31/Python爬虫实战：分析豆瓣中最新电影的影评（词云显示）/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Python爬虫实战：分析豆瓣中最新电影的影评（词云显示）</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
 
 <aside class="wrap-side-operation">
     <div class="mod-side-operation">
@@ -302,7 +376,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    目录，不存在的…
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#目标总览："><span class="toc-number">1.</span> <span class="toc-text">目标总览：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#一、Haar特征分类器介绍"><span class="toc-number">2.</span> <span class="toc-text">一、Haar特征分类器介绍</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#二、detectMultiScale函数"><span class="toc-number">3.</span> <span class="toc-text">二、detectMultiScale函数</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#三、python-OpenCV-解决人脸识别报错"><span class="toc-number">4.</span> <span class="toc-text">三、python OpenCV 解决人脸识别报错</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#四、识别框的形状"><span class="toc-number">5.</span> <span class="toc-text">四、识别框的形状</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#五、代码"><span class="toc-number">6.</span> <span class="toc-text">五、代码</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#END"><span class="toc-number">7.</span> <span class="toc-text">END</span></a></li></ol>
                     </div>
                 </span>
             </div>
@@ -344,7 +418,7 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,
